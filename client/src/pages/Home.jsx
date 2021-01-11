@@ -1,10 +1,13 @@
 import React from "react";
-import mapbox from "../components/mapbox"
+import mapBox from "../components/mapBox"
+
+
+
 const Home = (props) => {
   // Implement react map box here.
   return (
-    <div>
-      <h1>MAPBOX MAP HERE</h1>
+    <div id='map'>
+      <h1>mapBox MAP HERE</h1>
       <p>On home /</p>
     </div>
   );

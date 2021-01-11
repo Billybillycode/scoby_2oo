@@ -12,9 +12,9 @@ class LocationAutoComplete extends Component {
     };
     this.handleSearchChange = this.handleSearchChange.bind(this);
 
-    if (!process.env.REACT_APP_MAPBOX_TOKEN) {
+    if (!process.env.REACT_APP_mapBox_TOKEN) {
       throw new Error(
-        "You don't have any 'process.env.REACT_APP_MAPBOX_API_KEY'"
+        "You don't have any 'process.env.REACT_APP_mapBox_API_KEY'"
       );
     }
   }
@@ -45,7 +45,7 @@ class LocationAutoComplete extends Component {
 
     axios
       .get(
-        `https://api.mapbox.com/geocoding/v5/mapbox.places/${this.state.search}.json?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`
+        `https://api.mapBox.com/geocoding/v5/mapBox.places/${this.state.search}.json?access_token=${process.env.REACT_APP_mapBox_TOKEN}`
       )
       .then((response) => {
         this.setState({
