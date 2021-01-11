@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const item = require("../models/item");
 
+
 // http://localhost:4000/api/items
 router.get("/", (req, res, next) => {
   // Get all the items

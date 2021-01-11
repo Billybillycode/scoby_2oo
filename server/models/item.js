@@ -35,6 +35,6 @@ const userSchema = new Schema({
   },
   { timestamps: { createdAt: "created_at", updatedAt: "updated_at" } })
 
-  const Item = mongoose.model("User", userSchema);
+  const Item = mongoose.model("Item", userSchema);
 
   module.exports = Item;
