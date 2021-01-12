@@ -17,7 +17,7 @@ Option 2: navigation to ./client and ./server
 ### Client
 
 REACT_APP_BACKEND_URL = ???  
-REACT_APP_MAPBOX_TOKEN = ???
+REACT_APP_mapBox_TOKEN = ???
 
 ### Server
 

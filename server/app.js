@@ -9,6 +9,7 @@ const session = require("express-session");
 const MongoStore = require("connect-mongo")(session);
 const mongoose = require("mongoose");
 const app = express();
+const cors = require("cors")
 
 /*
  * Middlewares
@@ -28,6 +29,12 @@ app.use(
     saveUninitialized: true,
   })
 );
+app.use(
+  cors({
+      origin: "http://localhost:5000",
+      credentials: true
+  })
+)
 
 /*
  * Routes
